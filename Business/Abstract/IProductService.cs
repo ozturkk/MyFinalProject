@@ -16,6 +16,7 @@ namespace Business.Abstract
         IDataResult<Product> GetById(int productId);
         IResult Add(Product product);
         IResult Update(Product product);
+        IResult AddTransactionalTest(Product product);//Transaction; uygulamada tutarlılık sağlamak.Aynı sürede iki veya daha fazla veri tabanı işlemleri
 
     }
 }
